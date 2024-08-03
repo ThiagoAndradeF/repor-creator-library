@@ -1,7 +1,5 @@
-﻿
-using DinkToPdf;
+﻿using DinkToPdf;
 using DinkToPdf.Contracts;
-namespace repor_creator;
 public class HtmlToPdfConverter
 {
     private IConverter _converter;
@@ -19,12 +17,15 @@ public class HtmlToPdfConverter
                 ColorMode = ColorMode.Color,
                 Orientation = Orientation.Portrait,
                 PaperSize = PaperKind.A4,
+                DocumentTitle = "Formal Document",
             },
             Objects = {
                 new ObjectSettings() {
                     PagesCount = true,
                     HtmlContent = html,
-                    WebSettings = { DefaultEncoding = "utf-8" }
+                    WebSettings = { DefaultEncoding = "utf-8" },
+                    HeaderSettings = { FontName = "Arial", FontSize = 12, Right = "Page [page] of [toPage]", Line = true },
+                    FooterSettings = { FontName = "Arial", FontSize = 12, Line = true, Center = "Confidential" }
                 }
             }
         };
