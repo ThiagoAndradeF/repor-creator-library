@@ -5,7 +5,7 @@ public class HtmlToPdfConverter
     private IConverter _converter;
 
     public HtmlToPdfConverter()
-    {
+    {   
         _converter = new SynchronizedConverter(new PdfTools());
     }
 

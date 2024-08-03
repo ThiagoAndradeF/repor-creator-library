@@ -10,7 +10,6 @@
   <ItemGroup>
     <PackageReference Include="DinkToPdf" Version="1.0.8" />
     <PackageReference Include="DocX" Version="3.0.1" />
-    <PackageReference Include="Haukcode.WkHtmlToPdfDotNet" Version="1.5.90" />
   </ItemGroup>
 
 </Project>

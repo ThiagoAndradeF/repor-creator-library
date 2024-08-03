@@ -45,10 +45,6 @@
             "DocX": {
               "target": "Package",
               "version": "[3.0.1, )"
-            },
-            "Haukcode.WkHtmlToPdfDotNet": {
-              "target": "Package",
-              "version": "[1.5.90, )"
             }
           },
           "imports": [
